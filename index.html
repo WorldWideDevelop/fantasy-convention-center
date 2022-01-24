@@ -31,7 +31,7 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#about">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact us</a>
@@ -91,11 +91,34 @@
     </header>
     
     <!-- Main Part -->
-    <main>
+    <main class="position-relative">
+      <!-- About Section -->
+      <section id="about" class="container mx-auto my-5 pb-lg-5">
+        <h1 class="text-center pb-5"><span class="text-custom">About </span>us</h1>
+        <div class="row row-cols-1 row-cols-lg-2 g-4 d-flex align-items-center">
+          <div class="col about-image">
+            <img class="img-fluid rounded-3" src="images/building.jpg" alt="Convention Center">
+          </div>
+          <div class="col aobut-text">
+            <h1>Fantasy Convention Center</h1>
+            <p class="fs-5 text-muted">A convention center is a large building that is designed to hold a convention, where individuals and groups gather to promote and share common interests. Convention centers typically offer sufficient floor area to accommodate several thousand attendees. Very large venues, suitable for major trade shows, are sometimes known as exhibition halls. Convention centers typically have at least one auditorium and may also contain concert halls, lecture halls, meeting rooms, and conference rooms.</p>
+            <a href="https://en.wikipedia.org" class="btn explore-btn text-white bg-custom">Explore Now</a>
+            <div class="toast show align-items-center toast-border" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex align-items-center">
+                <img class="img-fluid ps-2" src="images/Vector.svg" alt="Offer">
+                <div class="toast-body">
+                  20% off on next booking....!
+               </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
         <!-- Package Section -->
         <section id="package" class="container mx-auto my-5">
             <h1 class="text-center pb-5 mb-md-5">Our <span class="text-custom">Packages</span></h1>
-            <!-- row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
                 <div class="col">
                   <div class="card h-100 card-body border-0 shadow-sm">

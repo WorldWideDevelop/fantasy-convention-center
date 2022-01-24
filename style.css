@@ -22,6 +22,13 @@ body {
 .bg-lightsalmon {
     background-color: rgba(255, 160, 122, 0.15);
 }
+.toast-border {
+    border-left: 7px solid #fc5c65;
+    position: absolute;
+    right: 0;
+    top: 4%;
+    z-index: 11;
+}
 .special-card {
     border-radius: 1.5rem;
     bottom: 2rem;
