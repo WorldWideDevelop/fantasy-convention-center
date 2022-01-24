@@ -14,36 +14,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light py-lg-3">
-        <div class="container-fluid container-lg">
-          <div class="logo">
-            <a class="navbar-brand fw-bold" href="#"><span class="text-custom">Fantasy</span> Convention Center</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#package">Subscribe</a>
-              </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
+  <!-- Header Section -->
 
+  <!-------------------- Navbar ------------------ [To keep the navbar top always i put the nav tag before header] --------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-3 position-sticky top-0 start-0 shadow">
+     <div class="container-fluid container-lg">
+       <div class="logo">
+         <a class="navbar-brand fw-bold" href="#"><span class="text-custom">Fantasy</span> Convention Center</a>
+       </div>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
+           <li class="nav-item">
+             <a class="nav-link" href="#">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#about">About us</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#package">Subscribe</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#contact">Contact us</a>
+           </li>
+           </ul>
+       </div>
+     </div>
+   </nav>
+
+    <header>
       <!-- Slider -->
       <section class="slider">
            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -91,10 +92,10 @@
     </header>
     
     <!-- Main Part -->
-    <main class="position-relative">
+    <main>
       <!-- About Section -->
-      <section id="about" class="container mx-auto my-5 pb-lg-5">
-        <h1 class="text-center pb-5"><span class="text-custom">About </span>us</h1>
+      <section id="about" class="container mx-auto pt-5 mt-lg-5">
+        <h1 class="text-center py-4"><span class="text-custom">About </span>us</h1>
         <div class="row row-cols-1 row-cols-lg-2 g-4 d-flex align-items-center">
           <div class="col about-image">
             <img class="img-fluid rounded-3" src="images/building.jpg" alt="Convention Center">
@@ -102,23 +103,25 @@
           <div class="col aobut-text">
             <h1>Fantasy Convention Center</h1>
             <p class="fs-5 text-muted">A convention center is a large building that is designed to hold a convention, where individuals and groups gather to promote and share common interests. Convention centers typically offer sufficient floor area to accommodate several thousand attendees. Very large venues, suitable for major trade shows, are sometimes known as exhibition halls. Convention centers typically have at least one auditorium and may also contain concert halls, lecture halls, meeting rooms, and conference rooms.</p>
-            <a href="https://en.wikipedia.org" class="btn explore-btn text-white bg-custom">Explore Now</a>
-            <div class="toast show align-items-center toast-border" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="d-flex align-items-center">
-                <img class="img-fluid ps-2" src="images/Vector.svg" alt="Offer">
-                <div class="toast-body">
-                  20% off on next booking....!
-               </div>
-                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-              </div>
-            </div>
+            <a href="https://en.wikipedia.org" target="_blank" class="btn explore-btn text-white bg-custom">Explore Now</a>
+            
           </div>
         </div>
       </section>
-      
+
         <!-- Package Section -->
-        <section id="package" class="container mx-auto my-5">
-            <h1 class="text-center pb-5 mb-md-5">Our <span class="text-custom">Packages</span></h1>
+        <section id="package"  class="position-relative">
+          <div class="toast show align-items-center toast-border" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex align-items-center">
+              <img class="img-fluid ps-2" src="images/Vector.svg" alt="Offer">
+              <div class="toast-body">
+                20% off on next booking....!
+             </div>
+              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+            <div class="container mx-auto pt-5 mt-lg-5">
+              <h1 class="text-center py-5 mb-md-5">Our <span class="text-custom">Packages</span></h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
                 <div class="col">
                   <div class="card h-100 card-body border-0 shadow-sm">
@@ -130,7 +133,7 @@
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Event support</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Decoration design</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Per day bill</p>
-                      <a href="" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
+                      <a href="https://i.ibb.co/m4DJmnf/thank-you.jpg" target="_blank" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
                   </div>
                 </div>   
                 <div class="col">
@@ -143,7 +146,7 @@
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i>Management support</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Decoration design</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Billed as shift</p>
-                      <a href="" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
+                      <a href="https://i.ibb.co/m4DJmnf/thank-you.jpg" target="_blank" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
                   </div>
                 </div>   
                 <div class="col">
@@ -161,7 +164,7 @@
                       <p class="text-white py-1 my-0"><i class="fas fa-check-circle text-white"></i> Buffed food</p>
                       <p class="text-white py-1 my-0"><i class="fas fa-check-circle text-white"></i> Premium Decoration</p>
                       <p class="text-white py-1 my-0"><i class="fas fa-check-circle text-white"></i> Pay as plan</p>
-                      <a href="" class="btn fw-bold text-custom bg-white rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
+                      <a href="https://i.ibb.co/m4DJmnf/thank-you.jpg" target="_blank" class="btn fw-bold text-custom bg-white rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
                   </div>
                 </div>   
                 <div class="col">
@@ -174,15 +177,55 @@
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Buffed food</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Premium Decoration</p>
                       <p class="text-muted py-1 my-0"><i class="fas fa-check-circle text-custom"></i> Pay as plan</p>
-                      <a href="" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
+                      <a href="https://i.ibb.co/m4DJmnf/thank-you.jpg" target="_blank" class="btn fw-bold text-custom rounded-pill bg-lightsalmon mt-2">Choose Plan</a>
                   </div>
                 </div>   
               </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="container mx-auto pt-5 mt-lg-5">
+          <h1 class="text-center py-5 mb-md-5">Happy <span class="text-custom">Clients</span> Says</h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col text-center">
+              <div class="card h-100 border-0 shadow">
+                <img src="images/person-1.png" class="card-img-top w-25 mx-auto pt-3" alt="Regina Miles">
+                <div class="card-body">
+                  <h5 class="card-title">Regina Miles</h5>
+                  <h6 class="text-bold">Banker</h6>
+                  <p class="card-text text-muted">These guys are really awesome. I am fully satisfied to see their work.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100 border-0 shadow">
+                <img src="images/person-2.png" class="card-img-top w-25 mx-auto pt-3" alt="Cret Yater">
+                <div class="card-body">
+                  <h5 class="card-title">Cret Yater</h5>
+                  <h6 class="text-bold">Managing Director</h6>
+                  <p class="card-text text-muted">I am really happy to took their service. They give me many features in reasonable price. Recommended this organization for you.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card h-100 border-0 shadow">
+                <img src="images/person-3.png" class="card-img-top w-25 mx-auto pt-3" alt="Jone Drank">
+                <div class="card-body">
+                  <h5 class="card-title">Jone Drank</h5>
+                  <h6 class="text-bold">Employee</h6>
+                  <p class="card-text text-muted">I told them to arrange a wedding event. They arranged a dynamic wedding event. This is the best event organizer organization I have ever seen.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          </div>
         </section>
 
         <!-- Frequently Asked Questions Section -->
-        <section class="container mx-auto my-4">
-          <h1 class="text-center py-5">Frequently Asked <span class="text-custom">Questions</span></h1>
+        <section class="container mx-auto pt-5 mt-lg-5">
+          <h1 class="text-center py-4">Frequently Asked <span class="text-custom">Questions</span></h1>
           <div class="row row-cols-1 row-cols-lg-2 g-4 d-lg-flex align-items-lg-center">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
@@ -241,8 +284,8 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="container mx-auto my-5">
-          <h1 class="text-center py-3"><span class="text-custom">Contact</span> us</h1>
+        <section id="contact" class="container mx-auto pt-5 mt-lg-5">
+          <h1 class="text-center py-4"><span class="text-custom">Contact</span> us</h1>
           <div class="contact row row-cols-1 row-cols-lg-2 g-lg-4 d-flex align-items-center">
             <div class="col contact-image">
               <img class="img-fluid" src="images/contact.jpg" alt="Contact">

@@ -13,6 +13,9 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+.navbar {
+    z-index: 99;
+}
 .bg-custom {
     background-color: #fc5c65;
 }
@@ -26,8 +29,8 @@ body {
     border-left: 7px solid #fc5c65;
     position: absolute;
     right: 0;
-    top: 4%;
-    z-index: 11;
+    top: 20%;
+    z-index: 3;
 }
 .special-card {
     border-radius: 1.5rem;
@@ -44,14 +47,14 @@ body {
     outline: none;
 }
 .form input:focus {
-    background-color: lightyellow;
+    background-color: #ffc3c5be;
     outline: none;
     border: none;
     border-bottom: 2px solid #fc5c65;
 }
 .form textarea:focus {
     border: 2px solid #fc5c65;
-    background-color: lightyellow;
+    background-color: #ffc3c5be;
 }
 .form [type=submit]:hover {
     background-color: #d8333c;
