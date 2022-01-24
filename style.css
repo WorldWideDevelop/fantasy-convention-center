@@ -59,3 +59,11 @@ body {
 .form [type=submit]:hover {
     background-color: #d8333c;
 }
+@media only screen and (max-width: 400px) {
+    .carousel-item{
+        height: 50vh;
+    }
+    .carousel-item img {
+        height: 100%;
+    }
+}
