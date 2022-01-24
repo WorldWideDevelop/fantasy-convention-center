@@ -1,5 +1,5 @@
 /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Basic CSS */
 * {
@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .bg-custom {
     background-color: #fc5c65;
@@ -26,4 +26,26 @@ body {
     border-radius: 1.5rem;
     bottom: 2rem;
     left: 0;
+}
+.form input[type=text],[type=email] {
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+.form textarea {
+    border: 2px solid gray;
+    outline: none;
+}
+.form input:focus {
+    background-color: lightyellow;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fc5c65;
+}
+.form textarea:focus {
+    border: 2px solid #fc5c65;
+    background-color: lightyellow;
+}
+.form [type=submit]:hover {
+    background-color: #d8333c;
 }
