@@ -29,6 +29,39 @@ body {
 .navbar-nav > li > a:hover {
     color: var(--pink);
 }
+.white-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--pink);
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .4s;
+}
+.white-btn:hover {
+    color: white;
+    background-color: var(--pink);
+}
+.pink-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--pink);
+    border: 2px solid transparent;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .4s;
+}
+.pink-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--pink);
+    color: var(--pink);
+}
+.choose-btn:hover {
+    color: white;
+    background-color: var(--pink);
+}
 .bg-custom {
     background-color: var(--pink);
 }
@@ -68,9 +101,6 @@ body {
 .form textarea:focus {
     border: 2px solid var(--pink);
     background-color: #ffc3c5be;
-}
-.form [type=submit]:hover {
-    background-color: #d8333c;
 }
 @media only screen and (max-width: 400px) {
     .carousel-item{
