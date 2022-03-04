@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Basic CSS */
+:root {
+    --pink: #fc5c65;
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,17 +19,27 @@ body {
 .navbar {
     z-index: 99;
 }
+.navbar-nav > li > a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    transition: .4s;
+    padding: 0.5rem 1rem;
+}
+.navbar-nav > li > a:hover {
+    color: var(--pink);
+}
 .bg-custom {
-    background-color: #fc5c65;
+    background-color: var(--pink);
 }
 .text-custom {
-    color: #fc5c65;
+    color: var(--pink);
 }
 .bg-lightsalmon {
     background-color: rgba(255, 160, 122, 0.15);
 }
 .toast-border {
-    border-left: 7px solid #fc5c65;
+    border-left: 7px solid var(--pink);
     position: absolute;
     right: 0;
     top: 20%;
@@ -50,10 +63,10 @@ body {
     background-color: #ffc3c5be;
     outline: none;
     border: none;
-    border-bottom: 2px solid #fc5c65;
+    border-bottom: 2px solid var(--pink);
 }
 .form textarea:focus {
-    border: 2px solid #fc5c65;
+    border: 2px solid var(--pink);
     background-color: #ffc3c5be;
 }
 .form [type=submit]:hover {
